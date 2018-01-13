@@ -6,4 +6,6 @@ declare module "*/package.json" {
 
 declare const graphql: (query: TemplateStringsArray) => void;
 
-declare module '*.png'
+// Supported images to import
+declare module '*.png';
+declare module '*.svg'
