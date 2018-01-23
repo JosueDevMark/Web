@@ -32,9 +32,11 @@ export default class DefaultLayout extends React.PureComponent<DefaultLayoutProp
         <SidebarMenu Link={Link} pathname={pathname} items={menuItems} visible={false} />
         <Sidebar.Pusher style={{ minHeight: "100vh" }}>
           {/* Header */}
-          {isHome ? null : <HeaderMenu
-            Link={Link} pathname={pathname} items={menuItems}
-          />}
+          {isHome ? null : <Segment vertical inverted textAlign="center">
+            <HeaderMenu
+              Link={Link} pathname={pathname} items={menuItems} inverted={true}
+            />
+          </Segment>}
 
           {/* Render children pages */}
           <div style={{ paddingBottom: 60 }}>
