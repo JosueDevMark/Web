@@ -1,0 +1,6 @@
+.animated-menu {
+    transition: .4s all;
+	-moz-transition: .4s all;
+	-webkit-transition: .4s all;
+	-o-transition: .4s all;
+}
