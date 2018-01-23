@@ -9,12 +9,6 @@ import * as isologo from "../../images/isologo.svg";
 import * as Styles from "./HeaderMenu.styles";
 import './HeaderMenu.animations.css';
 
-interface ScrollEvent {
-  progress: number;
-  scrollDirection: 'REVERSE' | 'FORWARD';
-  state: 'BEFORE' | 'DURING' | 'AFTER'
-}
-
 interface HeaderMenuProps extends MenuProps {
   dispatch: Dispatch<any>;
   inverted?: boolean;
