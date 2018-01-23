@@ -44,7 +44,7 @@ export default class DefaultLayout extends React.PureComponent<DefaultLayoutProp
           {/* Footer */}
           <Segment inverted vertical style={{ position: "absolute", bottom: 0, width: "100%" }}>
             <Container textAlign="center">
-              <p>Powered with <Icon name="heart" /> by Gatsby 1.0</p>
+              <p>Developed <Icon name="code" /> by @JosueDevMark</p>
             </Container>
           </Segment>
         </Sidebar.Pusher>
