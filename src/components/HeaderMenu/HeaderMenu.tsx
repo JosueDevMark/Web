@@ -80,13 +80,14 @@ export class HeaderMenu extends React.Component<HeaderMenuProps> {
           <Menu.Item as="a" className={`mobile only ${Styles.menuItem}`} id="about" icon="sidebar" onClick={this.handleMenu} />
           {items.map(item => {
             const active = item.exact ? pathname === item.path : pathname.startsWith(item.path);
+            const homeActive = this.props.isAnimate && item.path === '/#about'
             return <Menu.Item
               as={Link}
               className={`mobile hidden ${Styles.menuItem}`}
               name={item.name}
               to={item.path}
               key={item.path}
-              active={active}
+              active={active || homeActive}
             />;
           })}
           <Image
